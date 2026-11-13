@@ -1,6 +1,7 @@
-# Research Paper to Presentation & Viva Assistant
+### Research Paper to Presentation & Viva Assistant
 
-An Agentic AI-powered academic assistant that transforms research papers into structured summaries, presentation slides, concept explanations, and viva questions with model answers.
+# PaperMate AI
+An Agentic AI-powered academic assistant that transforms research papers into structured summaries, presentation slides, concept explanations, and viva questions with suggested answers.
 
 ## 1. Project Overview
 
@@ -10,9 +11,9 @@ The application uses Large Language Models (LLMs), LangChain, Agentic RAG, and C
 
 ## 2. Problem Statement
 
-Preparing presentations, understanding complex research concepts, and anticipating viva questions from research papers is time-consuming for students and faculty.
+Understanding complex research papers, preparing presentations, and anticipating viva questions can be time-consuming for students and faculty.
 
-PaperMate AI simplifies this process by automating research-paper summarization, concept extraction, presentation generation, and viva preparation.
+PaperMate AI simplifies this process by automating research paper summarization, concept extraction, presentation generation, and viva preparation.
 
 ## 3. Objectives
 
@@ -20,28 +21,28 @@ PaperMate AI simplifies this process by automating research-paper summarization,
 - Extract important concepts, contributions, methods, and results.
 - Generate presentation-ready slides.
 - Explain technical concepts in simple language.
-- Generate likely viva questions with model answers.
+- Generate likely viva questions with suggested answers.
 - Provide context-aware responses using Agentic RAG.
 
 ## 4. Features
 
-### Summarizer Agent
-Generates concise, structured summaries of uploaded research papers.
+**Summarizer Agent**  
+Generates concise and structured summaries of uploaded research papers.
 
-### Concept Extractor Agent
-Identifies key contributions, methodologies, technologies, and research findings.
+**Concept Extractor Agent**  
+Identifies key concepts, contributions, methodologies, technologies, and research findings.
 
-### Slide Generator Agent
-Converts research-paper content into presentation-ready slides.
+**Slide Generator Agent**  
+Converts research paper content into presentation-ready slides.
 
-### Viva Agent
+**Viva Agent**  
 Generates potential examiner questions with suggested model answers.
 
-### Intelligent Intent Router
+**Intelligent Intent Router**  
 Identifies user requests and directs them to the appropriate agent.
 
-### Agentic RAG
-Retrieves relevant sections from the uploaded research paper to provide grounded responses.
+**Agentic RAG**  
+Retrieves relevant sections from the uploaded research paper to generate context-aware and relevant responses.
 
 ## 5. Technology Stack
 
@@ -59,7 +60,9 @@ Retrieves relevant sections from the uploaded research paper to provide grounded
 
 ## 6. System Architecture
 
-User → Streamlit GUI → Intent Detection & Routing → Selected Agent → Agentic RAG → ChromaDB Retrieval → Gemini LLM → Generated Response.
+**System Flow:**
+
+User → Streamlit GUI → Intent Detection & Routing → Selected Agent → Agentic RAG → ChromaDB Retrieval → Gemini LLM → Generated Response
 
 The application uses four logical agents:
 
@@ -68,18 +71,18 @@ The application uses four logical agents:
 3. Slide Generator Agent
 4. Viva Agent
 
-A central intent router determines which agent should handle each request.
+A central intent router identifies the user's request and selects the appropriate agent.
 
 ## 7. Agentic RAG Workflow
 
-1. User uploads a research paper in PDF format.
+1. The user uploads a research paper in PDF format.
 2. Text is extracted from the PDF.
 3. The extracted text is divided into smaller chunks.
 4. Embeddings are generated for the document chunks.
-5. Embeddings are stored in ChromaDB.
+5. The embeddings are stored in ChromaDB.
 6. The intent router identifies the user's request.
-7. The application retrieves relevant document chunks when required.
-8. Retrieved context is passed to the selected LangChain prompt chain.
+7. Relevant document chunks are retrieved when required.
+8. The retrieved context is passed to the selected LangChain prompt chain.
 9. Gemini generates a context-aware response.
 10. The generated result is displayed in the Streamlit interface.
 
@@ -89,61 +92,66 @@ The application uses a system prompt to define the role of the academic assistan
 
 Prompt engineering techniques include:
 
-- Role-based prompting.
-- Zero-shot prompting.
-- Task-specific prompt templates.
-- Context-grounded prompting.
-- Response verification.
+- Role-based prompting
+- Zero-shot prompting
+- Task-specific prompt templates
+- Context-grounded prompting
+- Response verification
 
 LangChain LCEL connects prompts, the Gemini model, and output parsers into processing chains.
 
 ## 9. Installation and Execution
 
 ### Prerequisites
-- Python 3.10 or later (depending on package compatibility).
-- Google Gemini API key.
-- Internet connection for API access.
 
-### Step 1: Clone the repository
+- Python 3.10 or later (depending on package compatibility)
+- Google Gemini API key
+- Internet connection for API access
+
+### Step 1: Clone the Repository
 
 ```bash
 git clone YOUR_GITHUB_REPOSITORY_URL
 cd PaperMate-AI
 ```
 
-### Step 2: Create a virtual environment
+### Step 2: Create a Virtual Environment
 
 ```bash
 python -m venv .venv
 ```
 
-### Step 3: Activate the environment
+### Step 3: Activate the Environment
 
-Windows:
+**Windows:**
 
-```powershell
+```bash
 .venv\Scripts\activate
 ```
 
-### Step 4: Install dependencies
+### Step 4: Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Step 5: Configure API key
+### Step 5: Configure the API Key
 
-Create a `.env` file:
+Create a `.env` file in the project folder and add:
 
 ```env
 GOOGLE_API_KEY=your_api_key
 ```
 
-### Step 6: Run the application
+Replace `your_api_key` with your Google Gemini API key. Do not upload your `.env` file to GitHub.
+
+### Step 6: Run the Application
 
 ```bash
 streamlit run app.py
 ```
+
+The application will open in your browser.
 
 ## 10. Mandatory Acceptance Criteria
 
@@ -180,19 +188,19 @@ PaperMate-AI/
 
 The application provides:
 
-- Structured research paper summaries.
-- Extracted research concepts and contributions.
-- Presentation-ready slides.
-- Beginner-friendly concept explanations.
-- Viva questions with suggested answers.
+- Structured research paper summaries
+- Extracted research concepts and contributions
+- Presentation-ready slides
+- Beginner-friendly concept explanations
+- Viva questions with suggested answers
 
 ## 13. Future Enhancements
 
-- Support for multiple research papers.
-- More advanced viva simulation.
-- Export summaries as PDF and DOCX.
-- Presentation theme customization.
-- Multi-language explanations.
+- Support for multiple research papers
+- Advanced viva simulation
+- Export summaries as PDF and DOCX
+- Presentation theme customization
+- Multi-language explanations
 
 ## 14. Conclusion
 
@@ -200,9 +208,8 @@ PaperMate AI demonstrates how Agentic AI, Large Language Models, LangChain, and 
 
 The system helps students understand research papers, prepare presentations, and improve their confidence during viva examinations.
 
+---
 
-.
+## Author
 
-## 👩‍💻 Author
-Priyanshi Raj
-
+**Priyanshi Raj**
