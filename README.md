@@ -1,12 +1,5 @@
 # 🎓 PaperMate AI – Research Paper to Presentation & Viva Assistant
 
-[![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-blue.svg)](https://www.python.org/)
-[![Streamlit](https://img.shields.io/badge/Streamlit-1.35%2B-FF4B4B.svg)](https://streamlit.io/)
-[![Google Gemini API](https://img.shields.io/badge/Google%20Gemini-API-8E75C2.svg)](https://ai.google.dev/)
-[![LangChain LCEL](https://img.shields.io/badge/LangChain-LCEL%20Chains-1C3C3C.svg)](https://python.langchain.com/)
-[![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector%20Store-orange.svg)](https://www.trychroma.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
 
 ---
 
