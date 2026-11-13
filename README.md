@@ -7,7 +7,6 @@
 [![ChromaDB](https://img.shields.io/badge/ChromaDB-Vector%20Store-orange.svg)](https://www.trychroma.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-> **A college assignment project demonstrating an Agentic AI architecture powered by Google Gemini, LangChain LCEL, and ChromaDB vector search. Prioritizes a functional, beginner-friendly application fulfilling all 7 mandatory academic acceptance criteria.**
 
 ---
 
