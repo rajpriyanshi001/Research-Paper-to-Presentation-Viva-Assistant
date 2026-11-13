@@ -1,0 +1,12 @@
+# PaperMate AI Dependencies
+streamlit>=1.35.0
+langchain>=0.2.14
+langchain-core>=0.2.33
+langchain-community>=0.2.12
+langchain-google-genai>=1.0.8
+chromadb>=0.4.24
+pypdf>=4.2.0
+python-pptx>=0.6.23
+python-dotenv>=1.0.1
+google-generativeai>=0.7.2
+numpy>=1.24.3
