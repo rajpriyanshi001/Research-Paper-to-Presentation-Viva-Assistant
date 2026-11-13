@@ -203,5 +203,6 @@ The system helps students understand research papers, prepare presentations, and
 
 .
 
-👩‍💻 Author
+## 👩‍💻 Author
 Priyanshi Raj
+
