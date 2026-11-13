@@ -199,3 +199,9 @@ The application provides:
 PaperMate AI demonstrates how Agentic AI, Large Language Models, LangChain, and Retrieval-Augmented Generation can be combined to simplify academic research and presentation preparation.
 
 The system helps students understand research papers, prepare presentations, and improve their confidence during viva examinations.
+
+
+.
+
+👩‍💻 Author
+Priyanshi Raj
