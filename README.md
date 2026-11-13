@@ -433,67 +433,6 @@ PaperMate AI – Research Paper to Presentation & Viva Assistant/
 └── README.md               # Complete project documentation and submission report
 ```
 
----
 
-## 🔮 Soft Lavender Glassmorphism Dashboard Design
-
-The user interface has been redesigned to embody a soft lavender glassmorphism aesthetic inspired by modern AI productivity suites:
-
-1. **Visual Design & Palette**:
-   - **Main Lavender**: `#EDE7FA`
-   - **Soft Lavender**: `#F4F0FC`
-   - **Deep Lavender**: `#9B7AE8`
-   - **Royal Purple**: `#7654C8`
-   - **Powder Blue**: `#DCEAFF`
-   - **White Translucent Glass**: `rgba(255, 255, 255, 0.72)` with `backdrop-filter: blur(20px)`
-   - **Text**: `#28243A`
-   - **Delicate Borders**: `1px solid rgba(255, 255, 255, 0.9)` and `rgba(155, 122, 232, 0.25)`
-
-2. **Glowing Purple AI Orb**:
-   - Centerpiece glowing 3D-styled AI sphere in CSS with ambient light, specular reflections, floating animation (`@keyframes floatOrb`), and pulsating lavender aura (`@keyframes pulseAura`).
-
-3. **Left Sidebar**:
-   - **Branding**: `🔮 PaperMate AI` logo badge with the tagline *"Academic Research & Viva Assistant"*.
-   - **Navigation**: Dashboard, Research Summary, Concept Explorer, Slide Generator, Viva Practice, Smart Intent Router, and Settings.
-   - **API Key & Model Selector**: Password input with visibility toggle, active status badge (`● Gemini API Active`), and model selector.
-   - **Session Reset**: One-click session clearing and vector database reset.
-
-4. **Main Dashboard**:
-   - **Welcome Hero**: Heading *"AI Research Assistant"*, glowing purple AI orb centerpiece, welcome message *"Your research journey starts here."*, and subtitle *"Understand papers, create presentations and prepare confidently for your viva."*
-   - **PDF Upload Panel**: Large rounded white frosted-glass card with drag-and-drop uploader and 1-click sample paper loader.
-   - **2x2 Feature Cards Grid**: Paper Summary (`📄`), Concept Explorer (`💡`), Slide Generator (`📊`), and Viva Coach (`🎓`) in soft frosted-glass boxes.
-   - **Recent Research Section**: Displayed dynamically when actual document history is indexed into ChromaDB.
-   - **Technology Section**: Glass cards showcasing Gemini API, LangChain, ChromaDB, and Agentic RAG.
-
-5. **Specialized Agent Views**:
-   - Seamless dedicated views for Research Summary (8 sections + reflection verification), Concept Explorer (analogies & contributions), Slide Generator (presentation slides + **1-click .pptx download**), Viva Practice (10+ tiered questions with defense tips), and Smart Intent Router.
-     - `💡 Concept Extractor`: Theories, formulas, tools, and analogies.
-     - `📊 Slide Deck & PPTX`: Interactive slide cards with 1-click `.pptx` download.
-     - `💬 Concept Explainer`: Grounded Q&A with boundary checks and citation sources.
-     - `🎓 Viva Voce Coach`: 10+ tiered questions with model answers and defense strategies.
-
----
-
-## 🎓 Viva Voce Defense Guide for Evaluators
-
-When presenting this assignment to your professor or external examiner, be prepared to answer these common questions:
-
-### Q1: What makes this architecture "Agentic" rather than standard prompting?
-> **Answer**: A standard prompt passes the entire user query to a single static prompt. In PaperMate AI, we employ an **Agentic Intent Router** that dynamically classifies the objective, invokes specialized agents with targeted prompt templates, executes **conditional retrieval** (augmenting the vector search query based on intent), and conducts an automated **reflection verification step** to validate that claims are grounded in retrieved ChromaDB chunks.
-
-### Q2: Why use LangChain LCEL instead of legacy LLMChain?
-> **Answer**: LangChain Expression Language (LCEL) provides a clean, declarative, production-grade syntax using the pipe operator (`chain = prompt | llm | parser`). It supports streaming, async calls, standardized schemas, easy chaining, and eliminates deprecated legacy abstractions.
-
-### Q3: How do you prevent hallucinations in scientific summaries?
-> **Answer**: Through three layers of defense:
-> 1. **RAG Grounding**: The LLM only receives top-$k$ semantic chunks retrieved from ChromaDB.
-> 2. **System Prompt Boundary Enforcement**: The prompt strictly instructs the model to declare if a fact is absent rather than guessing.
-> 3. **Reflection Verification Agent**: A secondary LCEL evaluation chain analyzes the response against the retrieved context to verify factual consistency.
-
-### Q4: How is the PowerPoint (.pptx) file created?
-> **Answer**: The Slide Generator Agent produces structured JSON containing slide numbers, titles, subtitles, concise bullets, and speaker notes. Our backend in `agents.py` uses `python-pptx` to construct a 16:9 widescreen presentation in memory, applies a custom academic color palette, formats typography, inserts speaker notes into each slide's notes frame, and serves it via Streamlit's `st.download_button`.
-
----
-
-## 📄 License
-This project is open-source and available under the [MIT License](LICENSE).
+## AUTHOR
+## Priyanshi Raj
