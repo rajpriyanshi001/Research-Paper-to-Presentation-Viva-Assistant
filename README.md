@@ -1,4 +1,4 @@
-# PaperMate AI – Research Paper to Presentation & Viva Assistant
+# Research Paper to Presentation & Viva Assistant
 
 An Agentic AI-powered academic assistant that transforms research papers into structured summaries, presentation slides, concept explanations, and viva questions with model answers.
 
