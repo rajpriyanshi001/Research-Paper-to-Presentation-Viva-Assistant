@@ -15,8 +15,6 @@
 9. [Installation & Windows Local Setup](#-installation--windows-local-setup)
 10. [Step-by-Step Testing & Verification Guide](#-step-by-step-testing--verification-guide)
 11. [Project Structure](#-project-structure)
-12. [User Interface & Screenshots](#-user-interface--screenshots)
-13. [Viva Voce Defense Guide for Evaluators](#-viva-voce-defense-guide-for-evaluators)
 
 ---
 
