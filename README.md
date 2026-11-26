@@ -5,7 +5,7 @@
 
 ## 📑 Table of Contents
 1. [Project Overview](#-project-overview)
-2. [Tech highlights]
+2. [Tech highlights](#-Tech highlights)
 3. [System Architecture](#-system-architecture)
 4. [Key Features](#-key-features)
 5. [Technology Stack](#-technology-stack)
