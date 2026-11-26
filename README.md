@@ -5,7 +5,7 @@
 
 ## 📑 Table of Contents
 1. [Project Overview](#-project-overview)
-2. [7 Mandatory Acceptance Criteria Verification](#-7-mandatory-acceptance-criteria-verification)
+2. [Tech highlights]
 3. [System Architecture](#-system-architecture)
 4. [Key Features](#-key-features)
 5. [Technology Stack](#-technology-stack)
@@ -30,9 +30,9 @@
 
 ---
 
-## 🎯 7 Mandatory Acceptance Criteria Verification
+## 🎯 Tech highlights
 
-This project satisfies all **7 mandatory college acceptance criteria** directly in the source code and user interface:
+This project satisfies **Tech highlights** directly in the source code and user interface:
 
 | # | Acceptance Criterion | Source Code File & Component | Implementation Details |
 |---|---|---|---|
